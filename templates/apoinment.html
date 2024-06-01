@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appointment Booking</title>
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: white;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+form {
+  display: inline-block;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="time"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Appointment Booking</h1>
+  </header>
+  
+  <main>
+    <div class="appointment-options">
+      <h2>Choose Appointment Type</h2>
+      <button id="business-talk">Business Talk</button>
+      <button id="measurements">Measurements for Tailoring</button>
+      <!-- Add more options as needed -->
+    </div>
+    
+    <div id="appointment-form" class="hidden">
+      <h2>Book Appointment</h2>
+      <form action="submit.php" method="POST">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="date">Preferred Date:</label>
+        <input type="date" id="date" name="date" required>
+        
+        <label for="time">Preferred Time:</label>
+        <input type="time" id="time" name="time" required>
+        
+        <button type="submit">Book Appointment</button>
+      </form>
+    </div>
+  </main>
+  
+  <footer>
+    <p>&copy; 2024 Tailor Company. All rights reserved.</p>
+  </footer>
+  
+  <!-- <script src="script.js"></script> -->
+  <script>
+    document.getElementById("business-talk").addEventListener("click", function() {
+  showAppointmentForm();
+});
+
+document.getElementById("measurements").addEventListener("click", function() {
+  showAppointmentForm();
+});
+
+function showAppointmentForm() {
+  document.getElementById("appointment-form").classList.remove("hidden");
+}
+
+  </script>
+</body>
+</html>

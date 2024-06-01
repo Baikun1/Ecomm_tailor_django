@@ -1,0 +1,261 @@
+{% extends 'base.html' %} {% block title %}contact{% endblock title %} 
+{% block body %}
+<<<<<<< HEAD
+<style>
+  body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  /* background-color: #8aff86; */
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 10px 0;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.cart {
+  width: 70%;
+}
+
+.cart-item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.cart-item img {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.cart-item-details {
+  flex: 1;
+}
+
+.cart-summary {
+  width: 25%;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.checkout {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.remove-item {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+</style>
+<div>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Shopping Cart</h1>
+  </header>
+  <main>
+    <div class="cart">
+      <div class="cart-item">
+        <img src="product1.jpg" alt="Product Image">
+        <div class="cart-item-details">
+          <h3>Product Name</h3>
+          <p>Price: $10</p>
+          <p>Quantity: 2</p>
+          <button class="remove-item">Remove</button>
+        </div>
+      </div>
+      <!-- Additional cart items can be added dynamically -->
+    </div>
+    <div class="cart-summary">
+      <h2>Cart Summary</h2>
+      <p>Total Items: 2</p>
+      <p>Total Price: $20</p>
+      <button class="checkout">Proceed to Checkout</button>
+    </div>
+  </main>
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% comment %} <link rel="stylesheet" href="styles.css"> {% endcomment %}
+    <title>My Shopping Cart</title>
+    
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        header {
+            background-color: #f8f9fa;
+            padding: 20px;
+            width: 100%;
+        }
+        
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        
+        .product {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 10px;
+            width: 200px;
+        }
+        
+        .product img {
+            width: 100%;
+        }
+        
+        .product button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .product button:hover {
+            background-color: #0056b3;
+        }
+        
+        aside {
+            background-color: #f8f9fa;
+            padding: 20px;
+            width: 20%;
+        }
+        
+        #cart-items {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        #cart-items li {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            background-color: #f8f9fa;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+        }
+        
+    </style>
+>>>>>>> 2f4f1f2caf753f6ae509c4a337be2a0a4527fb37
+
+    <header>
+        <div class="logo">
+            <h1>My Shopping Cart</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="product">
+            <img src="product1.jpg" alt="Product 1">
+            <h2>Product 1</h2>
+            <p>Description of Product 1.</p>
+            <button onclick="addToCart('Product 1', 20.00)">Add to Cart</button>
+        </section>
+
+        <section class="product">
+            <img src="product2.jpg" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Description of Product 2.</p>
+            <button onclick="addToCart('Product 2', 30.00)">Add to Cart</button>
+        </section>
+
+        <section class="product">
+            <img src="product3.jpg" alt="Product 3">
+            <h2>Product 3</h2>
+            <p>Description of Product 3.</p>
+            <button onclick="addToCart('Product 3', 25.00)">Add to Cart</button>
+        </section>
+    </main>
+
+    <aside>
+        <h2>Cart</h2>
+        <ul id="cart-items">
+            <!-- Cart items will appear here -->
+        </ul>
+        <h3>Total: $<span id="cart-total">0.00</span></h3>
+        <button onclick="checkout()">Checkout</button>
+    </aside>
+    
+    <footer>
+        <p>&copy; 2023 My Shopping Cart. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let cartItems = [];
+let total = 0;
+
+function addToCart(itemName, price) {
+    cartItems.push({ name: itemName, price: price });
+    total += price;
+
+    updateCart();
+}
+
+function updateCart() {
+    const cartElement = document.getElementById('cart-items');
+    const totalElement = document.getElementById('cart-total');
+
+    cartElement.innerHTML = '';
+    
+    cartItems.forEach(item => {
+        const li = document.createElement('li');
+        li.innerText = `${item.name}: $${item.price.toFixed(2)}`;
+        cartElement.appendChild(li);
+    });
+
+    totalElement.innerText = total.toFixed(2);
+}
+
+function checkout() {
+    alert(`Total amount to pay: $${total.toFixed(2)}`);
+}
+
+    </script>
+</body>
+</html>
+
+{% endblock body %}
