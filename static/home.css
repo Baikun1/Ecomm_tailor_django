@@ -1,0 +1,676 @@
+.firstpage {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav1 {
+    /* border: 2px solid red; */
+    height: 4rem;
+    width: 100%;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    position: fixed;
+    z-index: 5;
+    margin: -1rem -0.4em;
+}
+
+
+.navbar {
+    /* border: 2px solid red; */
+    display: flex;
+    /* justify-content:right; */
+    position: fixed;
+    top: 1rem;
+    /* right: 0rem; */
+    z-index: 45;
+    /* background-color: #717171; */
+}
+
+a {
+    text-decoration: none;
+    /* margin: 5px; */
+    /* font-size: xx-large;
+    font-weight: bolder; */
+}
+
+
+.serch {
+    text-decoration: none;
+    /* margin: 5px; */
+    font-size: xx-large;
+    font-weight: bolder;
+    position: fixed;
+    top: 1rem;
+    right: 0rem;
+    z-index: 80;
+    /* background-color: #717171; */
+
+}
+
+.serch a:hover {
+    text-decoration: underline;
+
+    font-weight: bolder;
+}
+
+
+
+.logo {
+    display: flex;
+    font-size: xx-large;
+    font-weight: 900;
+}
+
+.logo:hover {
+    display: flex;
+    font-size: xx-large;
+    font-weight: 800;
+}
+
+.logolintap {
+    color: blue;
+}
+
+
+
+.members {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid red;
+    height: 50rem;
+
+}
+
+
+
+
+
+.lastcontainer {
+    background-color: rgba(3, 4, 78, 0.082);
+    padding: 10px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    height: 550px;
+    width: 400px;
+    margin-left: 35%;
+    margin-top: 10rem;
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.836), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.input {
+    margin: 5%;
+    /* background-color: black; */
+
+}
+
+input {
+    width: 100%;
+    background-color: rgba(236, 225, 225, 0.37);
+    height: 30px;
+}
+
+#messege1 {
+    height: 100px;
+    background-color: rgba(230, 218, 218, 0.075);
+}
+
+#messege1::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    /* color: red; */
+    opacity: 1;
+    padding: 5px;
+    margin: 2px;
+    width: 100%;
+    color: rgb(15, 16, 16);
+    /* Firefox */
+}
+
+.lastpage6 {
+    /* background-color: rgb(163, 151, 151); */
+    color: rgb(89, 92, 94);
+    margin-top: 20%;
+    margin-left: 40%;
+    justify-content: center;
+}
+
+.twiter {
+    margin-left: 17%;
+    color: aqua;
+
+}
+
+.btn123 {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(49, 48, 88);
+    color: black;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.midl {
+    /* border:2px solid red;  */
+    display: flex;
+    /* width: 68px; */
+    /* height: 7rem; */
+    /* margin-top: -2%; */
+    margin-left: -16rem;
+    /* justify-content: space-around; */
+    /* position: absolute; */
+    /* color: black; */
+
+    /* z-index: 8; */
+    /* white-space: nowrap; */
+    /* top: 5rem; */
+    /* border: 2px solid red; */
+    /* position: sticky;
+    top: 2rem;
+    z-index: 6; */
+
+
+
+}
+
+.firstpage {
+    /* border: 2px solid red; */
+    position: sticky;
+    top: -4rem;
+    z-index: 40;
+}
+
+.mid {
+    /* border:2px solid rgb(228, 233, 228); */
+    justify-content: center;
+    margin-left: 1rem;
+    margin-top: 0rem;
+    margin-bottom: -4rem;
+    font-size: 3rem;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    /* left margin: 10PX;
+        margin top: 0px; */
+    /* position:static; */
+    /* top: 5rem; */
+    /* z-index: 6; */
+    /* margin-top: -5rem; */
+
+}
+
+.mid a:hover {
+    text-decoration: underline;
+    /* margin: 4px; */
+    /* font-size: xx-large; */
+    font-weight: bolder;
+    color: crimson;
+}
+
+
+
+.slideshow-container1 {
+    max-width: 100%;
+    position: relative;
+    /* margin: 0%; */
+}
+
+.fade1 {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.log {
+    margin-top: -30px;
+    position: absolute;
+    top: 3px;
+    left: 35px;
+}
+
+.end {
+    position: absolute;
+    top: 5px;
+    right: 35px;
+}
+
+#firstheading {
+    position: absolute;
+    top: 190px;
+    left: 200px;
+}
+
+#firstpara1 {
+    position: absolute;
+    top: 300px;
+    left: 200px;
+    width: 500px;
+}
+
+button {
+    /* background-color: white;
+    /* border-radius: 20px; */
+    /*box-shadow: 0px 20px 20x 0px red; */
+    height: 3rem;
+    width: 7rem;
+    border-radius: 1rem;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out;
+
+}
+
+button:hover {
+    /* background-color: rgba(0, 0, 0, 0.425);
+    border-radius: 20px;
+    box-shadow: 0px 20px 20x 0px red; */
+    background: rgb(63, 94, 251);
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+    cursor: pointer;
+}
+
+#firstbtn1 {
+    position: absolute;
+    top: 390px;
+    left: 200px;
+}
+
+#firstbtn1:hover {
+    position: absolute;
+    top: 392px;
+    left: 202px;
+
+}
+
+.btn2 {
+    position: absolute;
+    top: 1000px;
+    left: 202px;
+
+}
+
+
+
+
+
+
+.para {
+    display: flex;
+    margin-top: 80px;
+}
+
+.third {
+    display: flex;
+    justify-content: space-between;
+}
+
+#secondheading {
+    position: inherit;
+    top: 500px;
+    left: 200px;
+}
+
+
+
+/* .list {
+    margin: 20px;
+    margin-right: 40px;
+
+} */
+
+* {
+    box-sizing: border-box
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+html::-webkit-scrollbar {
+    width: 10px;
+
+}
+
+/* Track */
+html::-webkit-scrollbar-track {
+    background: #0a00003a;
+
+}
+
+/* Handle */
+html::-webkit-scrollbar-thumb {
+    background: rgba(230, 6, 6, 0.432);
+    border-radius: 5px;
+
+}
+
+/* Handle on hover */
+html::-webkit-scrollbar-thumb:hover {
+    background: rgb(226, 16, 16);
+}
+
+body,
+html {
+    height: 300%;
+
+    background: #DC2424;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A569D, #DC2424);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A569D, #DC2424);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.containermember {
+    /* border: 2px solid rgb(247, 237, 237); */
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    /* justify-content: space-around; */
+    /* height: 22rem; */
+    /* width: 65rem; */
+    /* padding-top: 10%; */
+    margin: 10%;
+    border-radius: 5px;
+    background-color: rgba(245, 245, 245, 0.295);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* border:2px solid red; */
+
+
+}
+
+.allmembers {
+    /* height: 200%; */
+    width: 90%;
+    display: flex;
+    /* overflow-x: hidden; */
+    overflow-x: scroll;
+    /* align-items: center; */
+    /* flex-direction: column; */
+
+}
+.allmembers::-webkit-scrollbar {
+    /* width: 1px; */
+    height: 10px;
+
+}
+
+/* Track */
+.allmembers::-webkit-scrollbar-track {
+    background: #0a00003a;
+
+}
+
+/* Handle */
+.allmembers::-webkit-scrollbar-thumb {
+    background: rgba(230, 6, 6, 0);
+    border-radius: 5px;
+
+}
+
+/* Handle on hover */
+.allmembers::-webkit-scrollbar-thumb:hover {
+    background: rgb(226, 16, 16);
+}
+
+.member {
+    border: 2px solid rgb(235, 224, 224);
+    height: 250px;
+    width: 200px;
+    margin-inline: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgb(52, 0, 238);
+}
+
+
+.first {
+    display: flex;
+    justify-content: space-between;
+}
+
+.third {
+
+    display: inline;
+    /* flex-direction: row; */
+
+    /* justify-content:space-between; */
+}
+
+.list ul li {
+    display: inline;
+    font-size: x-large;
+    padding-left: 2rem;
+    /* color: blue; */
+}
+
+.list ul li a:hover {
+    font-style: italic;
+}
+
+
+.head {
+    margin-top: -10rem;
+    /* margin-left: 3rem; */
+    /* border:2px solid red; */
+    /* position: absolute; */
+    /* top: 25%;
+    left: 45%; */
+
+
+}
+
+.tick {
+    color: red;
+}
+
+.love {
+
+    align-items: center;
+
+}
+
+.photo {
+    margin-left: 45%;
+    font-size: xx-large;
+
+
+
+}
+
+.namme {
+
+    margin-left: 30%;
+}
+
+.email {
+    margin-left: 10%;
+
+}
+
+.assign {
+    display: block;
+    margin-left: 0%;
+    margin-right: auto;
+}
+
+.viw {
+    float: right;
+
+}
+
+.btn123:hover {
+    background-color: blue;
+    border: 2px solid rgb(6, 23, 248);
+    border-radius: 10px;
+    color: rgb(241, 236, 236);
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.836), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn123 {
+    background-color: rgba(237, 237, 245, 0.486);
+    border-radius: 10px;
+    border: 2px solid whitesmoke;
+    color: rgb(10, 9, 9);
+    box-shadow: 0 10px 30px 0 rgba(3, 1, 1, 0.671), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.-- {
+    margin-top: -13%;
+    color: blue;
+
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    /* width: 3300px; */
+    /* hight: 50px; */
+    margin: 2rem;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
+}
+
+img {
+    border-radius: 5px 5px 0 0;
+}
+
+.pricing {
+    display: flex;
+    /* border: 2px solid blue; */
+    overflow-y: 70%;
+    overflow-x: scroll;
+
+
+}
+.pricing::-webkit-scrollbar {
+    /* width: 1px; */
+    height: 10px;
+
+}
+
+/* Track */
+.pricing::-webkit-scrollbar-track {
+    background: #0a00003a;
+
+}
+
+/* Handle */
+.pricings::-webkit-scrollbar-thumb {
+    background: rgba(230, 6, 6, 0.432);
+    border-radius: 5px;
+
+}
+
+/* Handle on hover */
+.pricing::-webkit-scrollbar-thumb:hover {
+    background: rgb(226, 16, 16);
+}

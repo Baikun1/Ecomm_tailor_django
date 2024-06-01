@@ -1,0 +1,137 @@
+{% extends 'base.html' %}
+{% block title %}index{% endblock title %}
+{% block body %}
+
+<main>
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="bd-placeholder-img" width="100%" height="100%" src="static\tailor_1600x600.jpg"aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></img>
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>This is Baikuntha Behera.</h1>
+              <p>Join us for make your life/business digital.</p>
+              <p><a class="btn btn-lg btn-primary" href="signin">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="bd-placeholder-img" width="100%" height="100%" src="static\tailor_1_1600x600.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></img>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Provide godd services.</h1>
+              <p>Our policy authorized........................
+
+              </p>
+              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="bd-placeholder-img" width="100%" height="100%" src="static\tailor_project_img_2_1600x600.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></img>
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>This is our team.</h1>
+              <p>We are provide best experience.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  
+  
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+  
+    <div class="container marketing">
+  
+      <!-- Three columns of text below the carousel -->
+      {% comment %} <div class="row">
+        <div class="col-lg-4">
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="https://source.unsplash.com/140x140/?boy/" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text></img>
+          <h2 class="fw-normal">Mr.Baikuntha </h2>
+          <p>jhfjhgjhgjhgjhgjhgjghjjhgjhg.</p>
+          <p><a class="btn btn-secondary" href="#">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="https://source.unsplash.com/140x140/?boy,young/" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text></img>
+          <h2 class="fw-normal">mr.been</h2>
+          <p>fdgdsfgsdfgsdfgdsfg.</p>
+          <p><a class="btn btn-secondary" href="#">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="https://source.unsplash.com/140x140/?girl,young/" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"></text></img>
+          <h2 class="fw-normal">Mr.x</h2>
+          <p>sdfgsdfgsdfgsdfgsdfgdfsg.</p>
+          <p><a class="btn btn-secondary" href="#">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row --> {% endcomment %}
+  
+  
+      <!-- START THE FEATURETTES -->
+  
+      <hr class="featurette-divider">
+  
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">First feature. <span class="text-muted">Unique Design It’ll blow your mind.</span></h2>
+          <p class="lead">We provide................................................. </p>
+          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam illum eaque facere aut voluptatem odit sit, hic animi quas, eum soluta id sapiente molestias officia et accusantium. Aut nisi voluptatum in corporis dolor veniam ex officiis amet, quae incidunt ducimus quasi ut inventore accusantium earum ab eaque harum unde reiciendis reprehenderit voluptatem recusandae possimus. Doloribus ut iure amet magni perspiciatis corporis, alias incidunt nihil pariatur eius error vel, eum ipsum aperiam nam ab similique sapiente illum ex deleniti accusamus, odio voluptate voluptatibus facere! Quaerat atque numquam earum et.
+          </p>
+        </div>
+        <div class="col-md-5">
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="static/ph1.avif" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></img>
+        </div>
+      </div>
+  
+      <hr class="featurette-divider">
+  
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
+          <p class="lead">Another featurette? Of course. it will...............................................</p>
+          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam illum eaque facere aut voluptatem odit sit, hic animi quas, eum soluta id sapiente molestias officia et accusantium. Aut nisi voluptatum in corporis dolor veniam ex officiis amet, quae incidunt ducimus quasi ut inventore accusantium earum ab eaque harum unde reiciendis reprehenderit voluptatem recusandae possimus. Doloribus ut iure amet magni perspiciatis corporis, alias incidunt nihil pariatur eius error vel, eum ipsum aperiam nam ab similique sapiente illum ex deleniti accusamus, odio voluptate voluptatibus facere! Quaerat atque numquam earum et.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="static\tailor_500x500.jpg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></img>
+        </div>
+      </div>
+  
+      <hr class="featurette-divider">
+  
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+          <p class="lead">And yes, this is the last block of representative and.................................</p>
+          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam illum eaque facere aut voluptatem odit sit, hic animi quas, eum soluta id sapiente molestias officia et accusantium. Aut nisi voluptatum in corporis dolor veniam ex officiis amet, quae incidunt ducimus quasi ut inventore accusantium earum ab eaque harum unde reiciendis reprehenderit voluptatem recusandae possimus. Doloribus ut iure amet magni perspiciatis corporis, alias incidunt nihil pariatur eius error vel, eum ipsum aperiam nam ab similique sapiente illum ex deleniti accusamus, odio voluptate voluptatibus facere! Quaerat atque numquam earum et.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="https://source.unsplash.com/500x500/?tailor/" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em"></text></img>
+        </div>
+      </div>
+  
+      <hr class="featurette-divider">
+  
+      <!-- /END THE FEATURETTES -->
+  
+    </div><!-- /.container -->
+  
+  
+
+{% endblock body %}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Textile Design Consultation</title>
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  margin-bottom: 20px;
+}
+
+.designer {
+  margin-bottom: 40px;
+}
+
+.designer img {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: white;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+form {
+  display: inline-block;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Textile Design Consultation</h1>
+  </header>
+  
+  <main>
+    <section id="designer-list">
+      <h2>Our Expert Designers</h2>
+      <div class="designer">
+        <img src="designer1.jpg" alt="Designer 1">
+        <h3>Designer Name</h3>
+        <p>Specialization: Textile Design</p>
+        <button onclick="bookConsultation('Designer Name')">Book Consultation</button>
+      </div>
+      <!-- Add more designers as needed -->
+    </section>
+    
+    <section id="consultation-form" class="hidden">
+      <h2>Book Consultation</h2>
+      <form action="submit.php" method="POST">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="project-details">Project Details:</label>
+        <textarea id="project-details" name="project-details" rows="4" required></textarea>
+        
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2024 Textile Design Consultation. All rights reserved.</p>
+  </footer>
+  
+  <script src="script.js"></script>
+  <!-- <script>
+    function bookConsultation(designerName) {
+  // Set designer name in the form's placeholder
+  document.getElementById("consultation-form").classList.remove("hidden");
+  document.getElementById("consultation-form").querySelector("h2").innerText = `Book Consultation with ${designerName}`;
+} -->
+
+  </script>
+</body>
+</html>
